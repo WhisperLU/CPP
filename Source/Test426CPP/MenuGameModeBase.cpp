@@ -21,3 +21,15 @@ AMenuGameModeBase::AMenuGameModeBase()
 	
 }
 
+AMenuGameModeBase::~AMenuGameModeBase()
+{
+	
+}
+
+void AMenuGameModeBase::NewFunc()
+{
+	TSharedPtr<NewClass,ESPMode::ThreadSafe> NewClassSharedPtr(new NewClass());
+	
+}
+
+

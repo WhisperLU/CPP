@@ -15,7 +15,7 @@ AMenuCharacter::AMenuCharacter()
 void AMenuCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -32,6 +32,7 @@ void AMenuCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
+<<<<<<< HEAD
 void AMenuCharacter::DelayAA(UObject* WorldContextObject, float Duration, FLatentActionInfo LatentInfo)
 {
 }
@@ -49,4 +50,6 @@ void AMenuCharacter::EvaluateCurveTableRowNew(UCurveTable* CurveTable, FName Row
 }
 
 
+=======
+>>>>>>> dd95e2a230ebcd6d185afa4ddb83967d2798bb45
 

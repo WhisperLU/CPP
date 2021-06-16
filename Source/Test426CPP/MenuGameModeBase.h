@@ -9,6 +9,14 @@
 /**
  * 
  */
+ 
+ class NewClass
+ {
+ public:
+ 	int MyValues;
+ };
+
+ 
 UCLASS()
 class TEST426CPP_API AMenuGameModeBase : public AGameModeBase
 {
@@ -16,4 +24,9 @@ class TEST426CPP_API AMenuGameModeBase : public AGameModeBase
 
 public:
 	AMenuGameModeBase();
+	virtual ~AMenuGameModeBase() override;//把析构函数定义为虚函数是个很好的选择
+
+	UFUNCTION(BlueprintCallable,Category = "NewFunction")
+	void NewFunc();
+	
 };

@@ -32,3 +32,21 @@ void AMenuCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
+void AMenuCharacter::DelayAA(UObject* WorldContextObject, float Duration, FLatentActionInfo LatentInfo)
+{
+}
+
+void AMenuCharacter::DelayBB(UObject* WorldContextObject, float Duration, FLatentActionInfo LatentInfo)
+{
+}
+
+void AMenuCharacter::EvaluateCurveTableRow(UCurveTable* CurveTable, FName RowName, float InXY, TEnumAsByte<EEvaluateCurveTableResult::Type>& OutResult, float& OutXY)
+{
+}
+
+void AMenuCharacter::EvaluateCurveTableRowNew(UCurveTable* CurveTable, FName RowName, float InXY, TEnumAsByte<EEvaluateCurveTableResult::Type>& OutResult, float& OutXY)
+{
+}
+
+
+

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Engine/Classes/Kismet/DataTableFunctionLibrary.h"
 #include "MenuCharacter.generated.h"
 
 UCLASS()
@@ -26,4 +27,25 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	public:
+
+		/**just a new world*/
+		UFUNCTION(BlueprintCallable, Category = "Utilities|FlowControl", meta = (Latent, WorldContext = "WorldContextObject", LatentInfo = "LatentInfo", Duration = "0.2"))
+			static void DelayAA(UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo);
+
+		/**just a bad world
+		 * 
+ 		 * @param WorldContextObject  YOU CAN SLEEP
+ 		 * @param Duration      YOU CAN DRINK IT 
+ 		 * @param LatentInfo    YOU CAN EAT IT 
+ 		 */
+		UFUNCTION(BlueprintCallable, Category = "Utilities|FlowControl")
+			static void DelayBB(UObject* WorldContextObject, float Duration, struct FLatentActionInfo LatentInfo);
+
+			//meta = (ExpandEnumAsExecs = "OutResult", DataTablePin = "CurveTable") 这句是把枚举变量直接解开作为输出执行引脚
+		UFUNCTION(BlueprintCallable, Category = "DataTable", meta = (ExpandEnumAsExecs = "OutResult", DataTablePin = "CurveTable"))
+			static void EvaluateCurveTableRow(UCurveTable* CurveTable, FName RowName, float InXY, TEnumAsByte<EEvaluateCurveTableResult::Type>& OutResult, float& OutXY);
+
+		UFUNCTION(BlueprintCallable, Category = "DataTable")
+			static void EvaluateCurveTableRowNew(UCurveTable* CurveTable, FName RowName, float InXY, TEnumAsByte<EEvaluateCurveTableResult::Type>& OutResult, float& OutXY);
 };

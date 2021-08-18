@@ -27,7 +27,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-<<<<<<< HEAD
+
 	public:
 
 		/**just a new world*/
@@ -49,7 +49,7 @@ public:
 
 		UFUNCTION(BlueprintCallable, Category = "DataTable")
 			static void EvaluateCurveTableRowNew(UCurveTable* CurveTable, FName RowName, float InXY, TEnumAsByte<EEvaluateCurveTableResult::Type>& OutResult, float& OutXY);
-=======
 
->>>>>>> dd95e2a230ebcd6d185afa4ddb83967d2798bb45
+
+
 };

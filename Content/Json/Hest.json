@@ -1,0 +1,64 @@
+{
+	"details": [
+		{
+			"name": "Apple",
+			"size":
+			{
+				"x": 5,
+				"y": 5,
+				"z": 5
+			},
+			"price": 1000
+		},
+		{
+			"name": "Banana",
+			"size":
+			{
+				"x": 3,
+				"y": 5,
+				"z": 10
+			},
+			"price": 1200
+		},
+		{
+			"name": "Apple",
+			"size":
+			{
+				"x": 5,
+				"y": 5,
+				"z": 5
+			},
+			"price": 1000
+		},
+		{
+			"name": "Banana",
+			"size":
+			{
+				"x": 3,
+				"y": 5,
+				"z": 10
+			},
+			"price": 1200
+		},
+		{
+			"name": "Apple",
+			"size":
+			{
+				"x": 5,
+				"y": 5,
+				"z": 5
+			},
+			"price": 1000
+		},
+		{
+			"name": "Banana",
+			"size":
+			{
+				"x": 3,
+				"y": 5,
+				"z": 10
+			},
+			"price": 1200
+		}
+	]
+}
